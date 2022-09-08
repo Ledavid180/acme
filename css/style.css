@@ -1,0 +1,245 @@
+:root {
+    --unnamed-color: : 000000;
+    --active-color: #ffee06;
+    --raleway: 'Raleway', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.logo {
+    min-width: 70px;
+}
+
+.main-nav {
+    padding-top: 2%;
+}
+
+.main-nav a  {
+    color: var(--unnamed-color);
+    font-weight: 600;
+    font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.main-nav a:hover {
+    color: var(--unnamed-color);
+}
+
+.hamburger-items a, .menu {
+    font-weight: 600;
+    font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+
+.active-hover {
+    margin-right: calc(8px + (30 - 8) * ((50vw - 100px) / (1600 - 100)));
+}
+.active-hover:hover {
+    background-color: var(--active-color);
+    border-radius: 10px;
+}
+
+/* Style hamburger menu */
+.topnav {
+    position: relative;
+}
+
+/* Hide the links inside*/
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: var(--active-color);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--unnamed-color);
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color:var(--unnamed-color);
+}
+
+.menu svg {
+    width: 20px;
+}
+
+
+/* MAIN */
+/* Hero */
+.hero-img {
+    min-height: 150px;
+}
+
+.hero-content {
+    color: white;
+}
+
+/* Centering hero content on small screen */
+@media screen and (max-width: 450px) {
+    .hero-content {
+        text-align: center;
+    }
+}
+.built {
+    font-size: calc(27px + (64 - 27) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 600;
+    margin: 0;
+    font-family: var(--raleway);
+}
+
+
+/* Cards */
+.cardStyling img {
+    border-radius: 0;
+}
+
+.card-h3 {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-family: var(--raleway);
+    margin: 0;
+}
+
+.content {
+    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.learn-more {
+    background-color: var(--active-color);
+    font-weight: 700;
+    border-radius: 12px;
+}
+
+
+/* Carousel */
+.carousel-background-yellow {
+    height: calc(390px + (400 - 390) * ((100vw - 300px) / (1600 - 300)));
+    border: none;
+    width: 100%;
+}
+
+.testimony {
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.user {
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 700;
+    margin: 0;
+}
+
+.user-job {
+    font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.carousel-width {
+    width: calc(200px + (600 - 200) * ((100vw - 300px) / (1600 - 300)));
+    ;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.carousel-btns [data-bs-target] {
+    border-radius: 50%;
+    padding: 4px;
+    border: solid black 2px;
+    background-color: transparent;
+    width: 2px;
+}
+
+.arrows {
+    margin-top: 10%;
+    color: var(--unnamed-color);
+}
+
+@media screen and (max-width: 500px) {
+    .arrows {
+        margin-top: 70%;
+    }
+}
+
+
+/* FOOTER  */
+footer {
+
+    background-color: black;
+}
+
+.footer-nav li {
+    list-style: none;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--active-color);
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.latest-news,
+.our-newsletter {
+    font-size: calc(14px + (23 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-family: var(--raleway);
+}
+
+.latest-content {
+    font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.footer-inputs {
+    font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 500;
+    padding: 5px;
+    line-height: 5px;
+    width: 250px;
+}
+
+.footer-submit {
+    background-color: var(--active-color);
+    font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.footer-submit:hover {
+    background-color: var(--active-color);
+}
+
+.footer-contact {
+    font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.address {
+    margin: 0;
+}
+
+.email {
+    color: var(--active-color);
+    margin: 0;
+}
+
+.number {
+    color: var(--active-color);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+
